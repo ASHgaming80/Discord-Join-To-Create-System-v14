@@ -41,7 +41,7 @@ module.exports = client;
     require(`./handlers/${file}`)(client);
 });
 
-client.login(config.TOKEN || process.env.TOKEN)
+client.login(config.TOKEN || process.env.token)
     .catch((err) => {
         console.log("[CRUSH] Something went wrong while connecting to your bot" + "\n");
         console.log("[CRUSH] Error from DiscordAPI :" + err);
